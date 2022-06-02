@@ -12,19 +12,3 @@ The model releases the following material after implementation:
 7. ImportantFeatures.csv
 8. AutoIFS.png
 9. AutoIFS.tif
-
-**Note:** If you have a **Big Data**, you can use the following code in the **"Data Ingestion"** section after loading data.
-
-<!-- Data Size Reduction If it needs -->
-print("The Data Former Size:", df.size)
-print("")
-
-N = 3000
-
-if df.size <= N:
-    df = df.iloc[:, :]
-else:
-    df = df.iloc[0: N, :] 
-    
-print("The Data After Size:", df.size)
-print("")
